@@ -1,0 +1,301 @@
+cve_id,description,severity,score
+CVE-1999-0095,"The debug command in Sendmail is enabled, allowing attackers to execute commands as root.",HIGH,10.0
+CVE-1999-0082,CWD ~root command in ftpd allows root access.,HIGH,10.0
+CVE-1999-1471,Buffer overflow in passwd in BSD based operating systems 4.3 and earlier allows local users to gain root privileges by specifying a long shell or GECOS field.,HIGH,7.2
+CVE-1999-1122,Vulnerability in restore in SunOS 4.0.3 and earlier allows local users to gain privileges.,MEDIUM,4.6
+CVE-1999-1467,"Vulnerability in rcp on SunOS 4.0.x allows remote attackers from trusted hosts to execute arbitrary commands as root, possibly related to the configuration of the nobody user.",HIGH,10.0
+CVE-1999-1506,"Vulnerability in SMI Sendmail 4.0 and earlier, on SunOS up to 4.0.3, allows remote attackers to access user bin.",HIGH,7.5
+CVE-1999-0084,Certain NFS servers allow users to use mknod to gain privileges by creating a writable kmem device and setting the UID to 0.,HIGH,8.4
+CVE-2000-0388,Buffer overflow in FreeBSD libmytinfo library allows local users to execute commands via a long TERMCAP environmental variable.,HIGH,7.5
+CVE-1999-0209,The SunView (SunTools) selection_svc facility allows remote users to read files.,MEDIUM,5.0
+CVE-1999-1198,"BuildDisk program on NeXT systems before 2.0 does not prompt users for the root password, which allows local users to gain root privileges.",HIGH,7.2
+CVE-1999-1391,Vulnerability in NeXT 1.0a and 1.0 with publicly accessible printers allows local users to gain privileges via a combination of the npd program and weak directory permissions.,HIGH,7.2
+CVE-1999-1392,Vulnerability in restore0.9 installation script in NeXT 1.0a and 1.0 allows local users to gain root privileges.,HIGH,7.2
+CVE-1999-1057,VMS 4.0 through 5.3 allows local users to gain privileges via the ANALYZE/PROCESS_DUMP dcl command.,MEDIUM,4.6
+CVE-1999-1554,"/usr/sbin/Mail on SGI IRIX 3.3 and 3.3.1 does not properly set the group ID to the group ID of the user who started Mail, which allows local users to read the mail of other users.",LOW,2.1
+CVE-1999-1197,"TIOCCONS in SunOS 4.1.1 does not properly check the permissions of a user who tries to redirect console output and input, which could allow a local user to gain privileges.",HIGH,7.2
+CVE-1999-1115,"Vulnerability in the /etc/suid_exec program in HP Apollo Domain/OS sr10.2 and sr10.3 beta, related to the Korn Shell (ksh).",HIGH,7.2
+CVE-1999-1258,"rpc.pwdauthd in SunOS 4.1.1 and earlier does not properly prevent remote access to the daemon, which allows remote attackers to obtain sensitive system information.",MEDIUM,5.0
+CVE-1999-1438,Vulnerability in /bin/mail in SunOS 4.1.1 and earlier allows local users to gain root privileges via certain command line arguments.,HIGH,7.2
+CVE-1999-1211,Vulnerability in in.telnetd in SunOS 4.1.1 and earlier allows local users to gain root privileges.,HIGH,7.2
+CVE-1999-1212,Vulnerability in in.rlogind in SunOS 4.0.3 and 4.0.3c allows local users to gain root privileges.,HIGH,7.2
+CVE-1999-1194,"chroot in Digital Ultrix 4.1 and 4.0 is insecurely installed, which allows local users to gain privileges.",HIGH,7.2
+CVE-1999-1193,"The ""me"" user in NeXT NeXTstep 2.1 and earlier has wheel group privileges, which could allow the me user to use the su command to become root.",HIGH,10.0
+CVE-1999-1123,The installation of Sun Source (sunsrc) tapes allows local users to gain root privileges via setuid root programs (1) makeinstall or (2) winstall.,HIGH,7.2
+CVE-1999-1034,Vulnerability in login in AT&T System V Release 4 allows local users to gain privileges.,HIGH,7.2
+CVE-1999-1415,Vulnerability in /usr/bin/mail in DEC ULTRIX before 4.2 allows local users to gain privileges.,MEDIUM,4.6
+CVE-1999-1090,"The default configuration of NCSA Telnet package for Macintosh and PC enables FTP, even though it does not include an ""ftp=yes"" line, which allows remote attackers to read and modify arbitrary files.",HIGH,7.5
+CVE-1999-0498,"TFTP is not running in a restricted directory, allowing a remote attacker to access sensitive information such as password files.",HIGH,10.0
+CVE-1999-1468,"rdist in various UNIX systems uses popen to execute sendmail, which allows local users to gain root privileges by modifying the IFS (Internal Field Separator) variable.",MEDIUM,6.2
+CVE-1999-0167,"In SunOS, NFS file handles could be guessed, giving unauthorized access to the exported file system.",MEDIUM,4.6
+CVE-1999-1493,"Vulnerability in crp in Hewlett Packard Apollo Domain OS SR10 through SR10.3 allows remote attackers to gain root privileges via insecure system calls, (1) pad_$dm_cmd and (2) pad_$def_pfk().",HIGH,10.0
+CVE-1999-1032,Vulnerability in LAT/Telnet Gateway (lattelnet) on Ultrix 4.1 and 4.2 allows attackers to gain root privileges.,HIGH,10.0
+CVE-1999-1059,Vulnerability in rexec daemon (rexecd) in AT&T TCP/IP 4.0 for various SVR4 systems allows remote attackers to execute arbitrary commands.,HIGH,10.0
+CVE-1999-0627,"The rexd service is running, which uses weak authentication that can allow an attacker to execute commands.",LOW,0.0
+CVE-1999-1121,The default configuration for UUCP in AIX before 3.2 allows local users to gain root privileges.,HIGH,7.2
+CVE-1999-0117,AIX passwd allows local users to gain root access.,HIGH,7.2
+CVE-1999-1119,"FTP installation script anon.ftp in AIX insecurely configures anonymous FTP, which allows remote attackers to execute arbitrary commands.",HIGH,10.0
+CVE-1999-1142,"SunOS 4.1.2 and earlier allows local users to gain privileges via ""LD_*"" environmental variables to certain dynamically linked setuid or setgid programs such as (1) login, (2) su, or (3) sendmail, that change the real and effective user ids to the same user.",HIGH,7.2
+CVE-1999-0168,"The portmapper may act as a proxy and redirect service requests from an attacker, making the request appear to come from the local host, possibly bypassing authentication that would otherwise have taken place.  For example, NFS file systems could be mounted through the portmapper despite export restrictions.",HIGH,7.5
+CVE-1999-0214,Denial of service by sending forged ICMP unreachable packets.,HIGH,10.0
+CVE-1999-1396,Vulnerability in integer multiplication emulation code on SPARC architectures for SunOS 4.1 through 4.1.2 allows local users to gain root access or cause a denial of service (crash).,HIGH,7.2
+CVE-1999-1395,Vulnerability in Monitor utility (SYS$SHARE:SPISHR.EXE) in VMS 5.0 through 5.4-2 allows local users to gain privileges.,HIGH,7.2
+CVE-1999-1306,"Cisco IOS 9.1 and earlier does not properly handle extended IP access lists when the IP route cache is enabled and the ""established"" keyword is set, which could allow attackers to bypass filters.",HIGH,7.5
+CVE-1999-1466,"Vulnerability in Cisco routers versions 8.2 through 9.1 allows remote attackers to bypass access control lists when extended IP access lists are used on certain interfaces, the IP route cache is enabled, and the access list uses the ""established"" keyword.",HIGH,7.5
+CVE-1999-1021,"NFS on SunOS 4.1 through 4.1.2 ignores the high order 16 bits in a 32 bit UID, which allows a local user to gain root access if the lower 16 bits are set to 0, as fixed by the NFS jumbo patch upgrade.",HIGH,7.2
+CVE-1999-1056,Rejected reason: DO NOT USE THIS CANDIDATE NUMBER.  ConsultIDs: CVE-1999-1395.  Reason: This candidate is a duplicate of CVE-1999-1395.  Notes: All CVE users should reference CVE-1999-1395 instead of this candidate.  All references and descriptions in this candidate have been removed to prevent accidental usage,UNKNOWN,
+CVE-1999-0312,HP ypbind allows attackers with root privileges to modify NIS data.,MEDIUM,5.0
+CVE-1999-1507,Sun SunOS 4.1 through 4.1.3 allows local attackers to gain root access via insecure permissions on files and directories such as crash.,HIGH,7.2
+CVE-1999-1218,Vulnerability in finger in Commodore Amiga UNIX 2.1p2a and earlier allows local users to read arbitrary files.,LOW,2.1
+CVE-1999-1312,"Vulnerability in DEC OpenVMS VAX 5.5-2 through 5.0, and OpenVMS AXP 1.0, allows local users to gain system privileges.",HIGH,7.2
+CVE-1999-1216,"Cisco routers 9.17 and earlier allow remote attackers to bypass security restrictions via certain IP source routed packets that should normally be denied using the ""no ip source-route"" command.",HIGH,7.5
+CVE-1999-1162,Vulnerability in passwd in SCO UNIX 4.0 and earlier allows attackers to cause a denial of service by preventing users from being able to log into the system.,MEDIUM,6.4
+CVE-1999-0124,Vulnerabilities in UMN gopher and gopher+ versions 1.12 and 2.0x allow an intruder to read any files that can be accessed by the gopher daemon.,HIGH,10.0
+CVE-1999-1215,"LOGIN.EXE program in Novell Netware 4.0 and 4.01 temporarily writes user name and password information to disk, which could allow local users to gain privileges.",MEDIUM,4.6
+CVE-1999-1138,"SCO UNIX System V/386 Release 3.2, and other SCO products, installs the home directories (1) /tmp for the dos user, and (2) /usr/tmp for the asg user, which allows other users to gain access to those accounts since /tmp and /usr/tmp are world-writable.",HIGH,10.0
+CVE-1999-1318,"/usr/5bin/su in SunOS 4.1.3 and earlier uses a search path that includes the current working directory (.), which allows local users to gain privileges via Trojan horse programs.",HIGH,7.2
+CVE-1999-0145,"Sendmail WIZ command enabled, allowing root access.",HIGH,7.2
+CVE-1999-1137,"The permissions for the /dev/audio device on Solaris 2.2 and earlier, and SunOS 4.1.x, allow any local user to read from the device, which could be used by an attacker to monitor conversations happening near a machine that has a microphone.",LOW,2.1
+CVE-1999-0334,"In Solaris 2.2 and 2.3, when fsck fails on startup, it allows a local user with physical access to obtain root access.",HIGH,7.2
+CVE-1999-0181,"The wall daemon can be used for denial of service, social engineering attacks, or to execute remote commands.",MEDIUM,6.8
+CVE-1999-1242,Vulnerability in subnetconfig in HP-UX 9.01 and 9.0 allows local users to gain privileges.,MEDIUM,4.6
+CVE-1999-0211,Extra long export lists over 256 characters in some mount daemons allows NFS directories to be mounted by anyone.,MEDIUM,5.0
+CVE-1999-0338,AIX Licensed Program Product performance tools allow local users to gain root access.,HIGH,7.2
+CVE-1999-0120,Sun/Solaris utmp file allows local users to gain root access if it is writable by users other than root.,HIGH,7.2
+CVE-1999-1135,"Vulnerability in VUE 3.0 in HP 9.x allows local users to gain root privileges, as fixed by PHSS_4994 and PHSS_5438.",HIGH,7.2
+CVE-1999-1146,Vulnerability in Glance and gpm programs in GlancePlus for HP-UX 9.x and earlier allows local users to access arbitrary files and gain privileges.,HIGH,7.2
+CVE-1999-1388,passwd in SunOS 4.1.x allows local users to overwrite arbitrary files via a symlink attack and the -F command line argument.,MEDIUM,6.2
+CVE-1999-1134,"Vulnerability in Vue 3.0 in HP 9.x allows local users to gain root privileges, as fixed by PHSS_4038, PHSS_4055, and PHSS_4066.",HIGH,7.2
+CVE-1999-0113,Some implementations of rlogin allow root access if given a -froot parameter.,HIGH,10.0
+CVE-1999-0423,Vulnerability in hpterm on HP-UX 10.20 allows local users to gain additional privileges.,MEDIUM,4.6
+CVE-1999-0337,AIX batch queue (bsh) allows local and remote users to gain additional privileges when network printing is enabled.,HIGH,7.5
+CVE-1999-0207,"Remote attacker can execute commands through Majordomo using the Reply-To field and a ""lists"" command.",HIGH,7.5
+CVE-1999-1239,"HP-UX 9.x does not properly enable the Xauthority mechanism in certain conditions, which could allow local users to access the X display even when they have not explicitly been authorized to do so.",MEDIUM,4.6
+CVE-1999-1552,"dpsexec (DPS Server) when running under XDM in IBM AIX 3.2.5 and earlier does not properly check privileges, which allows local users to overwrite arbitrary files and gain privileges.",HIGH,7.2
+CVE-1999-1494,"colorview in Silicon Graphics IRIX 5.1, 5.2, and 6.0 allows local attackers to read arbitrary files via the -text argument.",LOW,2.1
+CVE-1999-1219,"Vulnerability in sgihelp in the SGI help system and print manager in IRIX 5.2 and earlier allows local users to gain root privileges, possibly through the clogin command.",HIGH,7.2
+CVE-1999-1238,Vulnerability in CORE-DIAG fileset in HP message catalog in HP-UX 9.05 and earlier allows local users to gain privileges.,MEDIUM,4.6
+CVE-1999-1022,"serial_ports administrative program in IRIX 4.x and 5.x trusts the user's PATH environmental variable to find and execute the ls program, which allows local users to gain root privileges via a Trojan horse ls program.",MEDIUM,6.2
+CVE-1999-1310,Rejected reason: DO NOT USE THIS CANDIDATE NUMBER.  ConsultIDs: CVE-1999-1022.  Reason: This candidate is a duplicate of CVE-1999-1022.  Notes: All CVE users should reference CVE-1999-1022 instead of this candidate.  All references and descriptions in this candidate have been removed to prevent accidental usage,UNKNOWN,
+CVE-1999-1248,Vulnerability in Support Watch (aka SupportWatch) in HP-UX 8.0 through 9.0 allows local users to gain privileges.,MEDIUM,4.6
+CVE-1999-1302,Unspecified vulnerability in pt_chmod in SCO UNIX 4.2 and earlier allows local users to gain root access.,HIGH,7.2
+CVE-1999-1303,Vulnerability in prwarn in SCO UNIX 4.2 and earlier allows local users to gain root access.,HIGH,7.2
+CVE-1999-1304,Vulnerability in login in SCO UNIX 4.2 and earlier allows local users to gain root access.,HIGH,7.2
+CVE-1999-1305,"Vulnerability in ""at"" program in SCO UNIX 4.2 and earlier allows local users to gain root access.",HIGH,7.2
+CVE-2000-0508,rpc.lockd in Red Hat Linux 6.1 and 6.2 allows remote attackers to cause a denial of service via a malformed request.,MEDIUM,5.0
+CVE-1999-0077,Predictable TCP sequence numbers allow spoofing.,MEDIUM,5.0
+CVE-1999-0232,Buffer overflow in NCSA WebServer (version 1.5c) gives remote access.,HIGH,10.0
+CVE-1999-0235,Buffer overflow in NCSA WebServer (1.4.1 and below) gives remote access.,HIGH,10.0
+CVE-1999-0242,Remote attackers can access mail files via POP3 in some Linux systems that are using shadow passwords.,HIGH,7.5
+CVE-1999-1098,Vulnerability in BSD Telnet client with encryption and Kerberos 4 authentication allows remote attackers to decrypt the session via sniffing.,MEDIUM,5.0
+CVE-1999-1243,SGI Desktop Permissions Tool in IRIX 6.0.1 and earlier allows local users to modify permissions for arbitrary files and gain privileges.,MEDIUM,4.6
+CVE-1999-0151,"The SATAN session key may be disclosed if the user points the web browser to other sites, possibly allowing root access.",HIGH,7.6
+CVE-1999-1080,"rmmount in SunOS 5.7 may mount file systems without the nosuid flag set, contrary to the documentation and its use in previous versions of SunOS, which could allow local users with physical access to gain root privileges by mounting a floppy or CD-ROM that contains a setuid program and running volcheck, when the file systems do not have the nosuid option specified in rmmount.conf.",HIGH,7.2
+CVE-1999-0066,AnyForm CGI remote execution.,CRITICAL,9.8
+CVE-1999-0161,"In Cisco IOS 10.3, with the tacacs-ds or tacacs keyword, an extended IP access control list could bypass filtering.",HIGH,7.5
+CVE-1999-0172,FormMail CGI program allows remote execution of commands.,HIGH,7.5
+CVE-1999-0203,"In Sendmail, attackers can gain root privileges via SMTP by specifying an improper ""mail from"" address and an invalid ""rcpt to"" address that would cause the mail to bounce to a program.",HIGH,10.0
+CVE-1999-1580,"SunOS sendmail 5.59 through 5.65 uses popen to process a forwarding host argument, which allows local users to gain root privileges by modifying the IFS (Internal Field Separator) variable and passing crafted values to the -oR option.",HIGH,7.2
+CVE-1999-0164,A race condition in the Solaris ps command allows an attacker to overwrite critical files.,MEDIUM,6.2
+CVE-1999-0155,The ghostscript command with the -dSAFER option allows remote attackers to execute commands.,HIGH,7.5
+CVE-1999-0245,"Some configurations of NIS+ in Linux allowed attackers to log in as the user ""+"".",MEDIUM,4.6
+CVE-1999-0218,Livingston portmaster machines could be rebooted via a series of commands.,MEDIUM,5.0
+CVE-1999-0073,"Telnet allows a remote client to specify environment variables including LD_LIBRARY_PATH, allowing an attacker to bypass the normal system libraries and gain root access.",HIGH,10.0
+CVE-1999-0099,Buffer overflow in syslog utility allows local or remote attackers to gain root privileges.,HIGH,10.0
+CVE-1999-0241,"Guessable magic cookies in X Windows allows remote attackers to execute commands, e.g. through xterm.",HIGH,10.0
+CVE-1999-0080,"Certain configurations of wu-ftp FTP server 2.4 use a _PATH_EXECPATH setting to a directory with dangerous commands, such as /bin, which allows remote authenticated users to gain root access via the ""site exec"" command.",HIGH,10.0
+CVE-1999-0123,Race condition in Linux mailx command allows local users to read user files.,LOW,3.7
+CVE-1999-0316,Buffer overflow in Linux splitvt command gives root access to local users.,HIGH,7.2
+CVE-1999-0325,vhe_u_mnt program in HP-UX allows local users to create root files through symlinks.,HIGH,7.2
+CVE-1999-0208,rpc.ypupdated (NIS) allows remote users to execute arbitrary commands.,HIGH,10.0
+CVE-1999-1186,"rxvt, when compiled with the PRINT_PIPE option in various Linux operating systems including Linux Slackware 3.0 and RedHat 2.1, allows local users to gain root privileges by specifying a malicious program using the -print-pipe command line parameter.",HIGH,7.2
+CVE-1999-1319,Vulnerability in object server program in SGI IRIX 5.2 through 6.1 allows remote attackers to gain root privileges in certain configurations.,HIGH,10.0
+CVE-1999-1491,"abuse.console in Red Hat 2.1 uses relative pathnames to find and execute the undrv program, which allows local users to execute arbitrary commands via a path that points to a Trojan horse program.",HIGH,7.2
+CVE-1999-0103,"Echo and chargen, or other combinations of UDP services, can be used in tandem to flood the server, a.k.a. UDP bomb or UDP packet storm.",MEDIUM,5.0
+CVE-1999-0143,Kerberos 4 key servers allow a user to masquerade as another by breaking and generating session keys.,MEDIUM,4.6
+CVE-1999-0233,IIS 1.0 allows users to execute arbitrary commands using .bat or .cmd files.,HIGH,10.0
+CVE-1999-0142,The Java Applet Security Manager implementation in Netscape Navigator 2.0 and Java Developer's Kit 1.0 allows an applet to connect to arbitrary hosts.,HIGH,7.5
+CVE-1999-0067,phf CGI program allows remote command execution through shell metacharacters.,HIGH,10.0
+CVE-1999-0141,Java Bytecode Verifier allows malicious applets to execute arbitrary commands as the user of the applet.,LOW,3.7
+CVE-1999-0070,test-cgi program allows an attacker to list files on the server.,MEDIUM,5.0
+CVE-1999-1103,dxconsole in DEC OSF/1 3.2C and earlier allows local users to read arbitrary files by specifying the file with the -file parameter.,MEDIUM,4.6
+CVE-1999-0078,"pcnfsd (aka rpc.pcnfsd) allows local users to change file permissions, or execute arbitrary commands through arguments in the RPC call.",LOW,1.9
+CVE-1999-0019,"Delete or create a file via rpc.statd, due to invalid information.",MEDIUM,5.0
+CVE-1999-1314,"Vulnerability in union file system in FreeBSD 2.2 and earlier, and possibly other operating systems, allows local users to cause a denial of service (system reload) via a series of certain mount_union commands.",LOW,2.1
+CVE-1999-1313,Manual page reader (man) in FreeBSD 2.2 and earlier allows local users to gain privileges via a sequence of commands.,MEDIUM,4.6
+CVE-1999-0522,The permissions for a system-critical NIS+ table (e.g. passwd) are inappropriate.,HIGH,7.2
+CVE-1999-0509,"Perl, sh, csh, or other shell interpreters are installed in the cgi-bin directory on a WWW site, which allows remote attackers to execute arbitrary commands.",HIGH,10.0
+CVE-1999-1205,"nettune in HP-UX 10.01 and 10.00 is installed setuid root, which allows local users to cause a denial of service by modifying critical networking configuration information.",LOW,2.1
+CVE-1999-1253,"Vulnerability in a kernel error handling routine in SCO OpenServer 5.0.2 and earlier, and SCO Internet FastStart 1.0, allows local users to gain root privileges.",HIGH,7.2
+CVE-1999-0138,"The suidperl and sperl program do not give up root privileges when changing UIDs back to the original users, allowing root access.",HIGH,7.2
+CVE-1999-0175,The convert.bas program in the Novell web server allows a remote attackers to read any file on the system that is internally accessible by the web server.,MEDIUM,5.0
+CVE-1999-0022,"Local user gains root privileges via buffer overflow in rdist, via expstr() function.",HIGH,7.8
+CVE-1999-0137,The dip program on many Linux systems allows local users to gain root access via a buffer overflow.,HIGH,7.2
+CVE-1999-1301,"A design flaw in the Z-Modem protocol allows the remote sender of a file to execute arbitrary programs on the client, as implemented in rz in the rzsz module of FreeBSD before 2.1.5, and possibly other programs.",HIGH,7.5
+CVE-1999-1572,"cpio on FreeBSD 2.1.0, Debian GNU/Linux 3.0, and possibly other operating systems, uses a 0 umask when creating files using the -O (archive) or -F options, which creates the files with mode 0666 and allows local users to read or overwrite those files.",LOW,2.1
+CVE-1999-0023,"Local user gains root privileges via buffer overflow in rdist, via lookup() function.",HIGH,7.2
+CVE-1999-0135,admintool in Solaris allows a local user to write to arbitrary files and gain root access.,HIGH,7.2
+CVE-1999-0136,Kodak Color Management System (KCMS) on Solaris allows a local user to write to arbitrary files and gain root access.,HIGH,7.2
+CVE-1999-0335,Rejected reason: DO NOT USE THIS CANDIDATE NUMBER. ConsultIDs: CVE-1999-0032. Reason: This candidate is a duplicate of CVE-1999-0032. Notes: All CVE users should reference CVE-1999-0032 instead of this candidate. All references and descriptions in this candidate have been removed to prevent accidental usage,UNKNOWN,
+CVE-1999-1413,"Solaris 2.4 before kernel jumbo patch -35 allows set-gid programs to dump core even if the real user id is not in the set-gid group, which allows local users to overwrite or create files at higher privileges by causing a core dump, e.g. through dmesg.",MEDIUM,4.6
+CVE-1999-0134,vold in Solaris 2.x allows local users to gain root access.,HIGH,7.2
+CVE-1999-0133,fm_fls license server for Adobe Framemaker allows local users to overwrite arbitrary files and gain root access.,LOW,2.1
+CVE-1999-0132,"Expreserve, as used in vi and ex, allows local users to overwrite arbitrary files and gain root access.",LOW,2.1
+CVE-1999-0085,Buffer overflow in rwhod on AIX and other operating systems allows remote attackers to execute arbitrary code via a UDP packet with a long hostname.,HIGH,7.5
+CVE-1999-1187,Pine before version 3.94 allows local users to gain privileges via a symlink attack on a lockfile that is created when a user receives new mail.,MEDIUM,4.6
+CVE-1999-1309,Sendmail before 8.6.7 allows local users to gain root access via a large value in the debug (-d) command line option.,HIGH,7.2
+CVE-1999-0324,ppl program in HP-UX allows local users to create root files through symlinks.,HIGH,7.2
+CVE-1999-1252,Vulnerability in a certain system call in SCO UnixWare 2.0.x and 2.1.0 allows local users to access arbitrary files and gain root privileges.,HIGH,7.2
+CVE-1999-0131,Buffer overflow and denial of service in Sendmail 8.7.5 and earlier through GECOS field gives root access to local users.,HIGH,7.2
+CVE-1999-1383,"(1) bash before 1.14.7, and (2) tcsh 6.05 allow local users to gain privileges via directory names that contain shell metacharacters (` back-tick), which can cause the commands enclosed in the directory name to be executed when the shell expands filenames using the \w option in the PS1 variable.",MEDIUM,4.6
+CVE-1999-1295,"Transarc DCE Distributed File System (DFS) 1.1 for Solaris 2.4 and 2.5 does not properly initialize the grouplist for users who belong to a large number of groups, which could allow those users to gain access to resources that are protected by DFS.",MEDIUM,4.6
+CVE-1999-0116,"Denial of service when an attacker sends many SYN packets to create multiple connections without ever sending an ACK to complete the connection, aka SYN flood.",MEDIUM,5.0
+CVE-1999-0961,HPUX sysdiag allows local users to gain root privileges via a symlink attack during log file creation.,MEDIUM,6.2
+CVE-1999-0206,MIME buffer overflow in Sendmail 8.8.0 and 8.8.1 gives root access.,HIGH,10.0
+CVE-1999-0246,HP Remote Watch allows a remote user to gain root access.,HIGH,10.0
+CVE-1999-0308,HP-UX gwind program allows users to modify arbitrary files.,MEDIUM,4.6
+CVE-1999-0319,Buffer overflow in xmcd 2.1 allows local users to gain access through a user resource setting.,HIGH,7.2
+CVE-1999-0234,Bash treats any character with a value of 255 as a command separator.,MEDIUM,4.6
+CVE-1999-0075,PASV core dump in wu-ftpd daemon when attacker uses a QUOTE PASV command after specifying a username and password.,MEDIUM,5.0
+CVE-1999-0032,"Buffer overflow in lpr, as used in BSD-based systems including Linux, allows local users to execute arbitrary code as root via a long -C (classification) command line option.",HIGH,7.2
+CVE-1999-0277,The WorkMan program can be used to overwrite any file to get root access.,HIGH,7.2
+CVE-1999-1384,"Indigo Magic System Tour in the SGI system tour package (systour) for IRIX 5.x through 6.3 allows local users to gain root privileges via a Trojan horse .exitops program, which is called by the inst command that is executed by the RemoveSystemTour program.",HIGH,7.2
+CVE-1999-0311,fpkg2swpk in HP-UX allows local users to gain root access.,HIGH,7.2
+CVE-1999-0336,Buffer overflow in mstm in HP-UX allows local users to gain root access.,HIGH,7.2
+CVE-1999-1161,Vulnerability in ppl in HP-UX 10.x and earlier allows local users to gain root privileges by forcing ppl to core dump.,HIGH,7.2
+CVE-1999-0130,Local users can start Sendmail in daemon mode and gain root privileges.,HIGH,7.2
+CVE-1999-1221,dxchpwd in Digital Unix (OSF/1) 3.x allows local users to modify arbitrary files via a symlink attack on the dxchpwd.log file.,LOW,2.1
+CVE-1999-1099,Kerberos 4 allows remote attackers to obtain sensitive information via a malformed UDP packet that generates an error string that inadvertently includes the realm name and the last user.,MEDIUM,5.0
+CVE-1999-1240,Buffer overflow in cddbd CD database server allows remote attackers to execute arbitrary commands via a long log message.,HIGH,7.5
+CVE-1999-0050,Buffer overflow in HP-UX newgrp program.,HIGH,7.2
+CVE-1999-0044,fsdump command in IRIX allows local users to obtain root access by modifying sensitive files.,HIGH,7.2
+CVE-1999-0129,Sendmail allows local users to write to a file and gain group permissions via a .forward or :include: file.,MEDIUM,4.6
+CVE-1999-0043,"Command execution via shell metachars in INN daemon (innd) 1.5 using ""newgroup"" and ""rmgroup"" control messages, and others.",CRITICAL,9.8
+CVE-1999-1401,Vulnerability in Desktop searchbook program in IRIX 5.0.x through 6.2 sets insecure permissions for certain user files (iconbook and searchbook).,MEDIUM,4.6
+CVE-1999-0045,List of arbitrary files on Web host via nph-test-cgi script.,HIGH,7.5
+CVE-1999-0096,Sendmail decode alias can be used to overwrite sensitive files.,MEDIUM,5.0
+CVE-1999-0101,"Buffer overflow in AIX and Solaris ""gethostbyname"" library call allows root access through corrupt DNS host names.",HIGH,10.0
+CVE-1999-0297,Buffer overflow in Vixie Cron library up to version 3.0 allows local users to obtain root access via a long environmental variable.,HIGH,7.2
+CVE-1999-1089,Buffer overflow in chfn command in HP-UX 9.X through 10.20 allows local users to gain privileges via a long command line argument.,HIGH,7.2
+CVE-1999-0128,"Oversized ICMP ping packets can result in a denial of service, aka Ping o' Death.",MEDIUM,5.0
+CVE-1999-0127,swinstall and swmodify commands in SD-UX package in HP-UX systems allow local users to create or overwrite arbitrary files to gain root access.,HIGH,7.2
+CVE-1999-1385,Buffer overflow in ppp program in FreeBSD 2.1 and earlier allows local users to gain privileges via a long HOME environment variable.,HIGH,7.2
+CVE-1999-1026,aspppd on Solaris 2.5 x86 allows local users to modify arbitrary files and gain root privileges via a symlink attack on the /tmp/.asppp.fifo file.,HIGH,7.2
+CVE-1999-0260,The jj CGI program allows command execution via shell metacharacters.,HIGH,7.5
+CVE-1999-1251,Vulnerability in direct audio user space code on HP-UX 10.20 and 10.10 allows local users to cause a denial of service.,LOW,2.1
+CVE-1999-0100,"Remote access in AIX innd 1.5.1, using control messages.",HIGH,10.0
+CVE-1999-0163,"In older versions of Sendmail, an attacker could use a pipe character to execute root commands.",HIGH,7.2
+CVE-1999-0166,"NFS allows users to use a ""cd .."" command to access other directories besides the exported file system.",MEDIUM,5.0
+CVE-1999-0170,"Remote attackers can mount an NFS file system in Ultrix or OSF, even if it is denied on the access list.",HIGH,7.5
+CVE-1999-0171,Denial of service in syslog by sending it a large number of superfluous messages.,LOW,2.1
+CVE-1999-0173,FormMail CGI program can be used by web servers other than the host server that the program resides on.,MEDIUM,5.0
+CVE-1999-0178,Buffer overflow in the win-c-sample program (win-c-sample.exe) in the WebSite web server 1.1e allows remote attackers to execute arbitrary code via a long query string.,HIGH,7.5
+CVE-1999-0179,"Windows NT crashes or locks up when a Samba client executes a ""cd .."" command on a file share.",MEDIUM,5.0
+CVE-1999-0180,in.rshd allows users to login with a NULL username and execute commands.,HIGH,7.5
+CVE-1999-0201,"A quote cwd command on FTP servers can reveal the full path of the home directory of the ""ftp"" user.",MEDIUM,6.4
+CVE-1999-0202,"The GNU tar command, when used in FTP sessions, may allow an attacker to execute arbitrary commands.",HIGH,7.5
+CVE-1999-0204,"Sendmail 8.6.9 allows remote attackers to execute root commands, using ident.",HIGH,10.0
+CVE-1999-0217,Malicious option settings in UDP packets could force a reboot in SunOS 4.1.3 systems.,MEDIUM,5.0
+CVE-1999-0236,ScriptAlias directory in NCSA and Apache httpd allowed attackers to read CGI programs.,HIGH,7.5
+CVE-1999-0249,Windows NT RSHSVC program allows remote users to execute arbitrary commands.,HIGH,7.2
+CVE-1999-0251,Denial of service in talk program allows remote attackers to disrupt a user's display.,MEDIUM,5.0
+CVE-1999-0252,Buffer overflow in listserv allows arbitrary command execution.,HIGH,7.5
+CVE-1999-0253,IIS 3.0 with the iis-fix hotfix installed allows remote intruders to read source code for ASP programs by using a %2e instead of a . (dot) in the URL.,HIGH,7.5
+CVE-1999-0265,ICMP redirect messages may crash or lock up a host.,MEDIUM,5.0
+CVE-1999-0274,Denial of service in Windows NT DNS servers through malicious packet which contains a response to a query that wasn't made.,MEDIUM,5.0
+CVE-1999-0345,Jolt ICMP attack causes a denial of service in Windows 95 and Windows NT systems.,MEDIUM,5.0
+CVE-1999-0496,"A Windows NT 4.0 user can gain administrative rights by forcing NtOpenProcessToken to succeed regardless of the user's permissions, aka GetAdmin.",HIGH,7.2
+CVE-1999-0499,NETBIOS share information may be published through SNMP registry keys in NT.,HIGH,7.5
+CVE-1999-0503,A Windows NT local user or administrator account has a guessable password.,HIGH,7.2
+CVE-1999-0504,"A Windows NT local user or administrator account has a default, null, blank, or missing password.",HIGH,7.5
+CVE-1999-0510,A router or firewall allows source routed packets from arbitrary hosts.,HIGH,7.5
+CVE-1999-0511,IP forwarding is enabled on a machine which is not a router or firewall.,HIGH,7.5
+CVE-1999-0517,"An SNMP community name is the default (e.g. public), null, or missing.",HIGH,7.5
+CVE-1999-0518,A NETBIOS/SMB share password is guessable.,HIGH,7.5
+CVE-1999-0519,"A NETBIOS/SMB share password is the default, null, or missing.",HIGH,7.5
+CVE-1999-0521,An NIS domain name is easily guessable.,HIGH,7.2
+CVE-1999-0525,IP traceroute is allowed from arbitrary hosts.,LOW,0.0
+CVE-1999-0534,"A Windows NT user has inappropriate rights or privileges, e.g. Act as System, Add Workstation, Backup, Change System Time, Create Pagefile, Create Permanent Object, Create Token Name, Debug, Generate Security Audit, Increase Priority, Increase Quota, Load Driver, Lock Memory, Profile Single Process, Remote Shutdown, Replace Process Token, Restore, System Environment, Take Ownership, or Unsolicited Input.",MEDIUM,4.6
+CVE-1999-0535,"A Windows NT account policy for passwords has inappropriate, security-critical settings, e.g. for password length, password age, or uniqueness.",HIGH,10.0
+CVE-1999-0550,A router's routing tables can be obtained from arbitrary hosts.,HIGH,7.5
+CVE-1999-0562,The registry in Windows NT can be accessed remotely by users who are not administrators.,HIGH,7.5
+CVE-1999-0572,".reg files are associated with the Windows NT registry editor (regedit), making the registry susceptible to Trojan Horse attacks.",HIGH,9.3
+CVE-1999-0575,"A Windows NT system's user audit policy does not log an event success or failure, e.g. for Logon and Logoff, File and Object Access, Use of User Rights, User and Group Management, Security Policy Changes, Restart, Shutdown, and System, and Process Tracking.",HIGH,7.5
+CVE-1999-0576,A Windows NT system's file audit policy does not log an event success or failure for security-critical files or directories.,HIGH,7.5
+CVE-1999-0582,"A Windows NT account policy has inappropriate, security-critical settings for lockout, e.g. lockout duration, lockout after bad logon attempts, etc.",MEDIUM,5.0
+CVE-1999-0626,A version of rusers is running that exposes valid user information to any entity on the network.,LOW,0.0
+CVE-1999-1120,"netprint in SGI IRIX 6.4 and earlier trusts the PATH environmental variable for finding and executing the disable program, which allows local users to gain privileges.",MEDIUM,4.6
+CVE-1999-0051,"Arbitrary file creation and program execution using FLEXlm LicenseManager, from versions 4.0 to 5.0, in IRIX.",HIGH,7.2
+CVE-1999-1249,"movemail in HP-UX 10.20 has insecure permissions, which allows local users to gain privileges.",MEDIUM,4.6
+CVE-1999-1145,Vulnerability in Glance programs in GlancePlus for HP-UX 10.20 and earlier allows local users to access arbitrary files and gain privileges.,HIGH,7.2
+CVE-1999-1311,Vulnerability in dtlogin and dtsession in HP-UX 10.20 and 10.10 allows local users to bypass authentication and gain privileges.,MEDIUM,4.6
+CVE-1999-0049,Csetup under IRIX allows arbitrary file creation or overwriting.,HIGH,7.2
+CVE-1999-1088,Vulnerability in chsh command in HP-UX 9.X through 10.20 allows local users to gain privileges.,HIGH,7.2
+CVE-1999-0081,wu-ftp allows files to be overwritten via the rnfr command.,MEDIUM,5.0
+CVE-1999-0048,"Talkd, when given corrupt DNS information, can be used to execute arbitrary commands with root privileges.",HIGH,10.0
+CVE-1999-0966,Buffer overflow in Solaris getopt in libc allows local users to gain root privileges via a long argv[0].,HIGH,7.2
+CVE-1999-0047,MIME conversion buffer overflow in sendmail versions 8.8.3 and 8.8.4.,HIGH,10.0
+CVE-1999-1144,"Certain files in MPower in HP-UX 10.x are installed with insecure permissions, which allows local users to gain privileges.",HIGH,7.2
+CVE-1999-0174,The view-source CGI program allows remote attackers to read arbitrary files via a .. (dot dot) attack.,MEDIUM,6.4
+CVE-1999-0309,HP-UX vgdisplay program gives root access to local users.,HIGH,7.2
+CVE-1999-0369,The Sun sdtcm_convert calendar utility for OpenWindows has a buffer overflow which can gain root access.,HIGH,7.2
+CVE-1999-0959,IRIX startmidi program allows local users to modify arbitrary files via a symlink attack.,HIGH,7.2
+CVE-1999-1160,Vulnerability in ftpd/kftpd in HP-UX 10.x and 9.x allows local and possibly remote users to gain root privileges.,HIGH,10.0
+CVE-1999-1299,"rcp on various Linux systems including Red Hat 4.0 allows a ""nobody"" user or other user with UID of 65535 to overwrite arbitrary files, since 65535 is interpreted as -1 by chown and other system calls, which causes the calls to fail to modify the ownership of the file.",HIGH,10.0
+CVE-1999-0298,ypbind with -ypset and -ypsetme options activated in Linux Slackware and SunOS allows local and remote attackers to overwrite files via a .. (dot dot) attack.,HIGH,7.5
+CVE-1999-0046,Buffer overflow of rlogin program using TERM environmental variable.,HIGH,10.0
+CVE-1999-0228,Denial of service in RPCSS.EXE program (RPC Locator) in Windows NT.,MEDIUM,5.0
+CVE-1999-0109,Buffer overflow in ffbconfig in Solaris 2.5.1.,HIGH,7.2
+CVE-1999-0041,Buffer overflow in NLS (Natural Language Service).,HIGH,7.5
+CVE-1999-0868,ucbmail allows remote attackers to execute commands via shell metacharacters that are passed to it from INN.,HIGH,7.2
+CVE-1999-0105,finger allows recursive searches by using a long string of @ symbols.,LOW,2.1
+CVE-1999-0106,Finger redirection allows finger bombs.,LOW,2.1
+CVE-1999-0165,NFS cache poisoning.,HIGH,10.0
+CVE-1999-0318,Buffer overflow in xmcd 2.0p12 allows local users to gain access through an environmental variable.,HIGH,7.2
+CVE-1999-0612,A version of finger is running that exposes valid user information to any entity on the network.,LOW,0.0
+CVE-1999-1128,"Internet Explorer 3.01 on Windows 95 allows remote malicious web sites to execute arbitrary commands via a .isp file, which is automatically downloaded and executed without prompting the user.",MEDIUM,5.1
+CVE-1999-1489,Buffer overflow in TestChip function in XFree86 SuperProbe in Slackware Linux 3.1 allows local users to gain root privileges via a long -nopr argument.,HIGH,7.2
+CVE-1999-0299,Buffer overflow in FreeBSD lpd through long DNS hostnames.,HIGH,9.3
+CVE-1999-1408,"Vulnerability in AIX 4.1.4 and HP-UX 10.01 and 9.05 allows local users to cause a denial of service (crash) by using a socket to connect to a port on the localhost, calling shutdown to clear the socket, then using the same socket to connect to a different port on localhost.",LOW,2.1
+CVE-1999-1525,Macromedia Shockwave before 6.0 allows a malicious webmaster to read a user's mail box and possibly access internal web servers via the GetNextText command on a Shockwave movie.,MEDIUM,5.1
+CVE-1999-0280,Remote command execution in Microsoft Internet Explorer using .lnk and .url files.,HIGH,7.5
+CVE-1999-0292,Denial of service through Winpopup using large user names.,MEDIUM,5.0
+CVE-1999-0315,Buffer overflow in Solaris fdformat command gives root access to local users.,HIGH,7.2
+CVE-1999-1387,"Windows NT 4.0 SP2 allows remote attackers to cause a denial of service (crash), possibly via malformed inputs or packets, such as those generated by a Linux smbmount command that was compiled on the Linux 2.0.29 kernel but executed on Linux 2.0.25.",MEDIUM,5.0
+CVE-1999-0042,Buffer overflow in University of Washington's implementation of IMAP and POP servers.,HIGH,10.0
+CVE-1999-1298,"Sysinstall in FreeBSD 2.2.1 and earlier, when configuring anonymous FTP, creates the ftp user without a password and with /bin/date as the shell, which could allow attackers to gain access to certain system resources.",HIGH,7.5
+CVE-1999-0058,"Buffer overflow in PHP cgi program, php.cgi allows shell access.",HIGH,7.5
+CVE-1999-0149,The wrap CGI program in IRIX allows remote attackers to view arbitrary directory listings via a .. (dot dot) attack.,HIGH,7.5
+CVE-1999-0038,Buffer overflow in xlock program allows local users to execute commands as root.,HIGH,8.4
+CVE-1999-1296,"Buffer overflow in Kerberos IV compatibility libraries as used in Kerberos V allows local users to gain root privileges via a long line in a kerberos configuration file, which can be specified via the KRB_CONF environmental variable.",HIGH,7.2
+CVE-1999-0040,Buffer overflow in Xt library of X Windowing System allows local users to execute commands with root privileges.,HIGH,7.2
+CVE-1999-0112,Buffer overflow in AIX dtterm program for the CDE.,HIGH,7.2
+CVE-1999-1116,Vulnerability in runpriv in Indigo Magic System Administration subsystem of SGI IRIX 6.3 and 6.4 allows local users to gain root privileges.,HIGH,7.2
+CVE-1999-1380,"Symantec Norton Utilities 2.0 for Windows 95 marks the TUNEOCX.OCX ActiveX control as safe for scripting, which allows remote attackers to execute arbitrary commands via the run option through malicious web pages that are accessed by browsers such as Internet Explorer 3.0.",MEDIUM,5.1
+CVE-1999-1267,"KDE file manager (kfm) uses a TCP server for certain file operations, which allows remote attackers to modify arbitrary files by sending a copy command to the server.",MEDIUM,5.0
+CVE-1999-0039,webdist CGI program (webdist.cgi) in SGI IRIX allows remote attackers to execute arbitrary commands via shell metacharacters in the distloc parameter.,HIGH,7.3
+CVE-1999-1067,"SGI MachineInfo CGI program, installed by default on some web servers, prints potentially sensitive system status information, which could be used by remote attackers for information gathering activities.",MEDIUM,5.0
+CVE-1999-1398,"Vulnerability in xfsdump in SGI IRIX may allow local users to obtain root privileges via the bck.log log file, possibly via a symlink attack.",MEDIUM,6.2
+CVE-1999-1461,"inpview in InPerson on IRIX 5.3 through IRIX 6.5.10 trusts the PATH environmental variable to find and execute the ttsession program, which allows local users to obtain root access by modifying the PATH to point to a Trojan horse ttsession program.",HIGH,7.2
+CVE-1999-1286,addnetpr in SGI IRIX 6.2 and earlier allows local users to modify arbitrary files and possibly gain root access via a symlink attack on a temporary file.,HIGH,7.2
+CVE-1999-1410,addnetpr in IRIX 5.3 and 6.2 allows local users to overwrite arbitrary files and possibly gain root privileges via a symlink attack on the printers temporary file.,MEDIUM,6.2
+CVE-1999-1158,"Buffer overflow in (1) pluggable authentication module (PAM) on Solaris 2.5.1 and 2.5 and (2) unix_scheme in Solaris 2.4 and 2.3 allows local users to gain root privileges via programs that use these modules such as passwd, yppasswd, and nispasswd.",HIGH,7.2
+CVE-1999-1184,Buffer overflow in Elm 2.4 and earlier allows local users to gain privileges via a long TERM environmental variable.,MEDIUM,4.6
+CVE-1999-0962,Buffer overflow in HPUX passwd command allows local users to gain root privileges via a command line option.,HIGH,7.2
+CVE-1999-1141,Ascom Timeplex router allows remote attackers to obtain sensitive information or conduct unauthorized activities by entering debug mode through a sequence of CTRL-D characters.,HIGH,7.5
+CVE-1999-1232,Untrusted search path vulnerability in day5datacopier in SGI IRIX 6.2 allows local users to execute arbitrary commands via a modified PATH environment variable that points to a malicious cp program.,HIGH,7.2
+CVE-1999-1402,"The access permissions for a UNIX domain socket are ignored in Solaris 2.x and SunOS 4.x, and other BSD-based operating systems before 4.4, which could allow local users to connect to the socket and possibly disrupt or control the operations of the program using that socket.",LOW,2.1
+CVE-1999-1191,Buffer overflow in chkey in Solaris 2.5.1 and earlier allows local users to gain root privileges via a long command line argument.,HIGH,7.2
+CVE-1999-1449,SunOS 4.1.4 on a Sparc 20 machine allows local users to cause a denial of service (kernel panic) by reading from the /dev/tcx0 TCX device.,LOW,2.1
+CVE-1999-0037,"Arbitrary command execution via metamail package using message headers, when user processes attacker's message using metamail.",HIGH,7.5
+CVE-1999-0259,cfingerd lists all users on a system via search.**@target.,MEDIUM,5.0
+CVE-1999-0036,IRIX login program with a nonzero LOCKOUT parameter allows creation or damage to files.,HIGH,8.4
+CVE-1999-0064,Buffer overflow in AIX lquerylv program gives root access to local users.,HIGH,7.2
+CVE-1999-1143,Vulnerability in runtime linker program rld in SGI IRIX 6.x and earlier allows local users to gain privileges via setuid and setgid programs.,HIGH,7.2
+CVE-1999-0034,"Buffer overflow in suidperl (sperl), Perl 4.x and 5.x.",HIGH,7.2
+CVE-1999-0035,"Race condition in signal handling routine in ftpd, allowing read/write arbitrary files.",MEDIUM,5.4
+CVE-1999-0144,Denial of service in Qmail by specifying a large number of recipients with the RCPT command.,LOW,2.1
+CVE-1999-0227,Access violation in LSASS.EXE (LSA/LSARPC) program in Windows NT allows a denial of service.,MEDIUM,5.0
+CVE-1999-0281,Denial of service in IIS using long URLs.,MEDIUM,5.0
+CVE-1999-0799,Buffer overflow in bootpd 2.4.3 and earlier via a long boot file location.,HIGH,10.0
+CVE-1999-0189,"Solaris rpcbind listens on a high numbered UDP port, which may not be filtered since the standard port number is 111.",HIGH,7.5

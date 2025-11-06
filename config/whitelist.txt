@@ -1,0 +1,13 @@
+google.com
+www.google.com
+bing.com
+yahoo.com
+facebook.com
+twitter.com
+amazon.com
+cloudflare.com
+akamai.com
+microsoft.com
+github.com
+gitlab.com
+bitbucket.org

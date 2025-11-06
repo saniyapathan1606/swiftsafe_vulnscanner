@@ -1,0 +1,7 @@
+__pycache__/
+*.pkl
+reports/
+*.log
+*.json
+venv/
+.env
