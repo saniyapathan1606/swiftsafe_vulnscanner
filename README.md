@@ -1,9 +1,3 @@
-Perfect 🔥 — let’s make your **GitHub project page (README.md)** look professional and clear for others to understand your **AI-powered Vulnerability Scanner “SwiftSafe”** project.
-
-Here’s a full example you can **copy-paste directly** into your GitHub repository’s main page (README.md):
-
----
-
 # ⚡ SwiftSafe – AI-Powered Vulnerability Scanner
 
 ### 🧠 About the Project
