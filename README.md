@@ -150,6 +150,4 @@ swiftsafe_vulnscanner/
 ### 💡 Author
 
 **👩‍💻 Saniya Pathan**
-Cybersecurity & AI Enthusiast | Student Researcher
-📫 Contact: [your-email or LinkedIn/GitHub profile]
-
+Cybersecurity & AI Enthusiast 
