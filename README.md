@@ -1,15 +1,10 @@
-Here’s a polished, professional, and concise update to your README with minor edits, better formatting, and clearer phrasing:
-
----
-
-# SwiftSafe – AI-Powered Vulnerability Scanner
+ SwiftSafe – AI-Powered Vulnerability Scanner
 
 ##  About the Project
-
-**SwiftSafe** is a Machine Learning–driven web vulnerability scanner that detects and predicts the severity of security flaws in web applications.
+A Machine Learning–driven web vulnerability scanner that detects and predicts the severity of security flaws in web applications.
 It combines **automated reconnaissance**, **header and cookie analysis**, and **ML-based CVE classification**, helping pentesters and bug bounty researchers identify potential risks quickly and efficiently.
 
----
+
 
 ## ### Features
 
