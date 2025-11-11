@@ -1,4 +1,4 @@
- SwiftSafe – AI-Powered Vulnerability Scanner
+## SwiftSafe – AI-Powered Vulnerability Scanner
 
 ##  About the Project
 A Machine Learning–driven web vulnerability scanner that detects and predicts the severity of security flaws in web applications.
@@ -6,17 +6,16 @@ It combines **automated reconnaissance**, **header and cookie analysis**, and **
 
 
 
-## ### Features
+ ### Features
 
 * **Automated Scanning** – Detects misconfigurations, missing security headers, and potential XSS/SQLi vectors
 * **Machine Learning Engine** – Trained on CVE/NVD data for severity prediction
 * **Intelligent Report Generation** – Generates detailed JSON reports for each target
 * **Real-Time Target Analysis** – Scans live websites or locally hosted applications (e.g., OWASP Juice Shop)
 * **Modular Design** – ML, scanner, and reporting modules are separate for flexibility and extension
+  
 
----
-
-## ### Tech Stack
+ ### Tech Stack
 
 | Component               | Technology                            |
 | ----------------------- | ------------------------------------- |
@@ -28,7 +27,7 @@ It combines **automated reconnaissance**, **header and cookie analysis**, and **
 
 ---
 
-## ### Setup Instructions
+ ### Setup Instructions
 
 #### 1️⃣ Clone the repository
 
