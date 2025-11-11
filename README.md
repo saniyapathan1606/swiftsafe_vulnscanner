@@ -1,23 +1,27 @@
-# ⚡ SwiftSafe – AI-Powered Vulnerability Scanner
-
-### 🧠 About the Project
-
-**SwiftSafe** is a Machine Learning–driven vulnerability scanner that detects and predicts the severity of security flaws in web applications.
-It integrates **automated reconnaissance**, **header and cookie analysis**, and **ML-based CVE classification** to help pentesters and bug bounty researchers identify potential risks faster.
+Here’s a polished, professional, and concise update to your README with minor edits, better formatting, and clearer phrasing:
 
 ---
 
-### 🚀 Features
+# SwiftSafe – AI-Powered Vulnerability Scanner
 
-* 🔍 **Automated Scanning** – Detects misconfigurations, missing security headers, and potential XSS/SQLi vectors
-* 🧩 **Machine Learning Engine** – Trained on CVE/NVD data for severity prediction
-* 🛡 **Intelligent Report Generation** – Saves detailed JSON reports for each target
-* 🌐 **Real-Time Target Analysis** – Scans live websites or locally hosted apps (e.g., Juice Shop)
-* ⚙️ **Modular Design** – Separate ML, scanner, and reporting modules
+##  About the Project
+
+**SwiftSafe** is a Machine Learning–driven web vulnerability scanner that detects and predicts the severity of security flaws in web applications.
+It combines **automated reconnaissance**, **header and cookie analysis**, and **ML-based CVE classification**, helping pentesters and bug bounty researchers identify potential risks quickly and efficiently.
 
 ---
 
-### 🧰 Tech Stack
+## ### Features
+
+* **Automated Scanning** – Detects misconfigurations, missing security headers, and potential XSS/SQLi vectors
+* **Machine Learning Engine** – Trained on CVE/NVD data for severity prediction
+* **Intelligent Report Generation** – Generates detailed JSON reports for each target
+* **Real-Time Target Analysis** – Scans live websites or locally hosted applications (e.g., OWASP Juice Shop)
+* **Modular Design** – ML, scanner, and reporting modules are separate for flexibility and extension
+
+---
+
+## ### Tech Stack
 
 | Component               | Technology                            |
 | ----------------------- | ------------------------------------- |
@@ -29,7 +33,7 @@ It integrates **automated reconnaissance**, **header and cookie analysis**, and 
 
 ---
 
-### 🧑‍💻 Setup Instructions
+## ### Setup Instructions
 
 #### 1️⃣ Clone the repository
 
@@ -38,11 +42,12 @@ git clone https://github.com/saniyapathan1606/swiftsafe_vulnscanner.git
 cd swiftsafe_vulnscanner
 ```
 
-#### 2️⃣ Create & activate virtual environment
+#### 2️⃣ Create & activate a virtual environment
 
 ```bash
 python -m venv venv
-venv\Scripts\activate   # On Windows
+venv\Scripts\activate   # Windows
+# source venv/bin/activate   # Linux / macOS
 ```
 
 #### 3️⃣ Install dependencies
@@ -51,7 +56,7 @@ venv\Scripts\activate   # On Windows
 pip install -r requirements.txt
 ```
 
-#### 4️⃣ Fetch CVE dataset
+#### 4️⃣ Fetch the CVE dataset
 
 ```bash
 python ml/fetch_nvd_single.py
@@ -80,7 +85,7 @@ Enter target URL (e.g., https://example.com): http://127.0.0.1:5000
 
 ---
 
-### 🧾 Example Output
+## ### Example Output
 
 ```json
 {
@@ -101,20 +106,21 @@ Enter target URL (e.g., https://example.com): http://127.0.0.1:5000
 
 ---
 
-### 🧠 Machine Learning Overview
+## ### Machine Learning Overview
 
-The model is trained on thousands of CVE entries from the NVD.
+The ML model is trained on thousands of CVE entries from NVD.
 It extracts features such as:
 
 * Attack vector
 * Access complexity
 * Privileges required
 * Impact metrics (CIA triad)
-  and predicts the **severity** (`LOW`, `MEDIUM`, `HIGH`, `CRITICAL`).
+
+The model predicts **vulnerability severity** (`LOW`, `MEDIUM`, `HIGH`, `CRITICAL`) and assigns a confidence score.
 
 ---
 
-### ⚙️ Folder Structure
+## ### Folder Structure
 
 ```
 swiftsafe_vulnscanner/
@@ -138,16 +144,17 @@ swiftsafe_vulnscanner/
 
 ---
 
-### 🧩 Future Enhancements
+## ### Future Enhancements
 
 * Integration with **Burp Suite / OWASP ZAP APIs**
-* Add **visual dashboard** for report visualization
-* Real-time **threat intelligence** integration
+* **Visual dashboard** for real-time report visualization
+* **Threat intelligence** integration
 * Multi-target concurrent scanning
 
 ---
 
-### 💡 Author
+## ### Author
 
-**👩‍💻 Saniya Pathan**
-Cybersecurity & AI Enthusiast 
+**Saniya Pathan**
+Cybersecurity & AI Enthusiast
+
