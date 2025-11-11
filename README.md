@@ -1,89 +1,95 @@
-## SwiftSafe – AI-Powered Vulnerability Scanner
+SwiftSafe – AI-Powered Vulnerability Scanner
 
-##  About the Project
+About the Project
+
 A Machine Learning–driven web vulnerability scanner that detects and predicts the severity of security flaws in web applications.
-It combines **automated reconnaissance**, **header and cookie analysis**, and **ML-based CVE classification**, helping pentesters and bug bounty researchers identify potential risks quickly and efficiently.
+It combines automated reconnaissance, header and cookie analysis, and ML-based CVE classification, helping pentesters and bug bounty researchers identify potential risks quickly and efficiently.
 
+Features
 
+Automated Scanning – Detects misconfigurations, missing security headers, and potential XSS/SQLi vectors
 
- ### Features
+Machine Learning Engine – Trained on CVE/NVD data for severity prediction
 
-* **Automated Scanning** – Detects misconfigurations, missing security headers, and potential XSS/SQLi vectors
-* **Machine Learning Engine** – Trained on CVE/NVD data for severity prediction
-* **Intelligent Report Generation** – Generates detailed JSON reports for each target
-* **Real-Time Target Analysis** – Scans live websites or locally hosted applications (e.g., OWASP Juice Shop)
-* **Modular Design** – ML, scanner, and reporting modules are separate for flexibility and extension
-  
+Intelligent Report Generation – Generates detailed JSON reports for each target
 
- ### Tech Stack
+Real-Time Target Analysis – Scans live websites or locally hosted applications (e.g., OWASP Juice Shop)
 
-| Component               | Technology                            |
-| ----------------------- | ------------------------------------- |
-| **Backend**             | Python (FastAPI / Flask)              |
-| **ML Engine**           | scikit-learn, pandas, NumPy           |
-| **Dataset Source**      | NVD (National Vulnerability Database) |
-| **Frontend (optional)** | React / Next.js                       |
-| **Reporting**           | JSON + Terminal Output                |
+Modular Design – ML, scanner, and reporting modules are separate for flexibility and extension
 
----
+Tech Stack
 
- ### Setup Instructions
+Component
 
-#### 1️⃣ Clone the repository
+Technology
 
-```bash
-git clone https://github.com/saniyapathan1606/swiftsafe_vulnscanner.git
+Backend
+
+Python (FastAPI / Flask)
+
+ML Engine
+
+scikit-learn, pandas, NumPy
+
+Dataset Source
+
+NVD (National Vulnerability Database)
+
+Frontend (optional)
+
+React / Next.js
+
+Reporting
+
+JSON + Terminal Output
+
+Setup Instructions
+
+1️⃣ Clone the repository
+
+git clone [https://github.com/saniyapathan1606/swiftsafe_vulnscanner.git](https://github.com/saniyapathan1606/swiftsafe_vulnscanner.git)
 cd swiftsafe_vulnscanner
-```
 
-#### 2️⃣ Create & activate a virtual environment
 
-```bash
+2️⃣ Create & activate a virtual environment
+
 python -m venv venv
-venv\Scripts\activate   # Windows
-# source venv/bin/activate   # Linux / macOS
-```
+venv\Scripts\activate      # Windows
+# source venv/bin/activate # Linux / macOS
 
-#### 3️⃣ Install dependencies
 
-```bash
+3️⃣ Install dependencies
+
 pip install -r requirements.txt
-```
 
-#### 4️⃣ Fetch the CVE dataset
 
-```bash
+4️⃣ Fetch the CVE dataset
+
 python ml/fetch_nvd_single.py
-```
 
-#### 5️⃣ Preprocess & train ML model
 
-```bash
+5️⃣ Preprocess & train ML model
+
 python ml/preprocess_real.py
 python ml/train_model.py
-```
 
-#### 6️⃣ Run the scanner
 
-```bash
+6️⃣ Run the scanner
+
 python scanner/web_scanner.py
-```
 
-#### 7️⃣ Enter your target URL
+
+7️⃣ Enter your target URL
 
 Example:
 
-```bash
-Enter target URL (e.g., https://example.com): http://127.0.0.1:5000
-```
+Enter target URL (e.g., [https://example.com](https://example.com)): [http://127.0.0.1:5000](http://127.0.0.1:5000)
 
----
 
-## ### Example Output
+Example Output
 
-```json
 {
-  "target": "https://juice-shop.local",
+  "target": "[https://juice-shop.local](https://juice-shop.local)",
   "ip_info": {
     "domain": "juice-shop.local",
     "ip": "127.0.0.1"
@@ -96,27 +102,25 @@ Enter target URL (e.g., https://example.com): http://127.0.0.1:5000
     }
   ]
 }
-```
 
----
 
-## ### Machine Learning Overview
+Machine Learning Overview
 
 The ML model is trained on thousands of CVE entries from NVD.
 It extracts features such as:
 
-* Attack vector
-* Access complexity
-* Privileges required
-* Impact metrics (CIA triad)
+Attack vector
 
-The model predicts **vulnerability severity** (`LOW`, `MEDIUM`, `HIGH`, `CRITICAL`) and assigns a confidence score.
+Access complexity
 
----
+Privileges required
 
-## ### Folder Structure
+Impact metrics (CIA triad)
 
-```
+The model predicts vulnerability severity (LOW, MEDIUM, HIGH, CRITICAL) and assigns a confidence score.
+
+Folder Structure
+
 swiftsafe_vulnscanner/
 │
 ├── ml/
@@ -134,21 +138,19 @@ swiftsafe_vulnscanner/
 │
 ├── requirements.txt
 └── README.md
-```
 
----
 
-## ### Future Enhancements
+Future Enhancements
 
-* Integration with **Burp Suite / OWASP ZAP APIs**
-* **Visual dashboard** for real-time report visualization
-* **Threat intelligence** integration
-* Multi-target concurrent scanning
+Integration with Burp Suite / OWASP ZAP APIs
 
----
+Visual dashboard for real-time report visualization
 
-## ### Author
+Threat intelligence integration
 
-**Saniya Pathan**
+Multi-target concurrent scanning
+
+Author
+
+Saniya Pathan
 Cybersecurity & AI Enthusiast
-
